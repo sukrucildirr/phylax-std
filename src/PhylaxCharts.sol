@@ -9,7 +9,7 @@ import {Phylax} from "./Phylax.sol";
 abstract contract PhylaxCharts is PhylaxBase {
     /// @dev Array of active charts
     StorageChart[] internal phylaxCharts;
-    /// @dev Mapping of chart name by chart data type to check name uniquness 
+    /// @dev Mapping of chart name by chart data type to check name uniqueness 
     // and correct incoming data points
     mapping(string => StorageChart) internal chartByName;
 
@@ -140,9 +140,9 @@ abstract contract PhylaxCharts is PhylaxBase {
         createChart(chartName, description, unitLabel, visualization, dataPointType, new Label[](0));
     }
 
-    /// @notice This function create multiple charts that will be overlayed on top of each other by default.
+    /// @notice This function create multiple charts that will be overlaid on top of each other by default.
     /// @param multiChartName The key that will be used to uniquely identify
-    /// a set of charts that should be overlayed on top of each other, as 
+    /// a set of charts that should be overlaid on top of each other, as 
     /// well as the name displayed on the single panel they show up on.
     /// @param description The description of the chart
     /// @param unitLabel The unit label of the charts, which will display on the y-axis
@@ -177,9 +177,9 @@ abstract contract PhylaxCharts is PhylaxBase {
         }
     }
 
-    /// @notice This function create multiple charts that will be overlayed on top of each other by default.
+    /// @notice This function create multiple charts that will be overlaid on top of each other by default.
     /// @param overlayKey The key that will be used to uniquely identify
-    /// a set of charts that should be overlayed on top of each other.
+    /// a set of charts that should be overlaid on top of each other.
     /// @param description The description of the chart
     /// @param unitLabel The unit label of the charts, which will display on the y-axis
     /// @param visualization The visualization of the charts
